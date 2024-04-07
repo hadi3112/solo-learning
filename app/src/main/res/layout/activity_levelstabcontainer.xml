@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="levelstabcontainerVM" type="com.muhammadsapplication.app.modules.levelstabcontainer.data.viewmodel.LevelstabcontainerVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnexplore"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearHomepagelevels"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleblack_900_01cornerRadius">
+                <com.google.android.material.tabs.TabLayout
+                    android:gravity="center_horizontal"
+                    android:id="@+id/tabLayoutTabview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/white_A700" app:tabTextColor="@color/gray_700_01"/>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:gravity="center_horizontal"
+                    android:id="@+id/viewPagerViewpager"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homepageexploretabContainerVM" type="com.muhammadsapplication.app.modules.homepageexploretabcontainer.data.viewmodel.HomepageexploretabContainerVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnexplore"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900_01">
+        <LinearLayout android:id="@+id/linearColumnhihadi"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_12pxh"
+            android:paddingStart="@dimen/_12pxh"
+            android:paddingTop="@dimen/_18pxv" style="@style/groupStyleblue_700">
+            <FrameLayout android:id="@+id/frameStackhihadi"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_73pxv"
+                android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_329pxh">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHihadi"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{homepageexploretabContainerVM.homepageexploretabContainerModel.txtHihadi}"
+                    style="@style/txtPoppinsbold18" tools:text="@string/lbl_hi_hadi"/>
+                <LinearLayout android:id="@+id/linearRow"
+                    android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_blue_gray_100_radius_5"
+                        android:id="@+id/btnIconbutton"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_25pxh"
+                        android:layout_width="@dimen/_26pxh"
+                        android:paddingHorizontal="@dimen/_4pxh"
+                        android:paddingVertical="@dimen/_4pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_group_38" tools:ignore="ContentDescription"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_blue_gray_100_radius_5"
+                        android:id="@+id/btnIconbuttonOne"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_25pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_width="@dimen/_26pxh"
+                        android:paddingHorizontal="@dimen/_3pxh"
+                        android:paddingVertical="@dimen/_3pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_group_37" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameExpbar"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_47pxv" android:layout_width="@dimen/_329pxh">
+                    <FrameLayout android:id="@+id/frameStackview"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="@dimen/_30pxv"
+                        android:layout_width="@dimen/_317pxh"
+                        android:paddingBottom="@dimen/_4pxv"
+                        android:paddingEnd="@dimen/_3pxh"
+                        android:paddingStart="@dimen/_3pxh"
+                        android:paddingTop="@dimen/_4pxv" style="@style/groupStyleblue_gray_2">
+                        <View
+                            android:background="@drawable/rectangle_bg_lime_700_radius_5"
+                            android:id="@+id/viewView"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_22pxv" android:layout_width="@dimen/_103pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txt25718000xp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{homepageexploretabContainerVM.homepageexploretabContainerModel.txt25718000xp}"
+                            style="@style/txtPoppinsbold10_2" tools:text="@string/msg_2571_8000_xp_collected"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageXpprofileicon"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_width="@dimen/_35pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_xp_profile_icon"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_xp_profile_icon"/>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowcurrenttrack"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumncurrenttr"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_4pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_4pxv" style="@style/groupStylecornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCurrenttrack"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{homepageexploretabContainerVM.homepageexploretabContainerModel.txtCurrenttrack}"
+                        style="@style/txtPoppinsbold12" tools:text="@string/lbl_current_track"/>
+                    <TextView android:id="@+id/txtCfunction"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{homepageexploretabContainerVM.homepageexploretabContainerModel.txtCfunction}"
+                        style="@style/txtPoppinsregular10_3" tools:text="@string/msg_c_function_programming"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearRowtelevision"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_25pxv"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_3pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_3pxv" style="@style/groupStyleblue_3">
+                    <FrameLayout android:id="@+id/frameStacktelevision"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_27pxv"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_32pxh">
+                        <ImageView android:id="@+id/imageTelevisionOne"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_24pxh"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_television_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_television_white_a700"/>
+                        <ImageView android:id="@+id/imageTelevision"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="@dimen/_20pxh"
+                            android:layout_width="@dimen/_26pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_television_white_a700_20x26"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_television_white_a700_20x26"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnptscounte"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPtsCounter"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{homepageexploretabContainerVM.homepageexploretabContainerModel.txtPtsCounter}"
+                            style="@style/txtPoppinsbold10_1" tools:text="@string/lbl_12_000_pts"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_3"
+                            android:id="@+id/viewViewOne"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_6pxv" android:layout_width="@dimen/_22pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/tabLayoutTabview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white_A700"
+            app:tabTextColor="@color/gray_700_01" style="@style/groupStylecornerRadius_1"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:gravity="center_horizontal"
+            android:id="@+id/viewPagerViewpager"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent"/>
+    </LinearLayout>
+</layout>
